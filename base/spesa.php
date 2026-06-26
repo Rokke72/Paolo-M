@@ -1,21 +1,21 @@
 <?php
-  
-  $spesa = [
-        "Pomodori",    
-        "Zucchine",
-        "Peperoni", 
-        "Latte",  
-        "Pasta",   
-        "Polpa di pomodoro",  
-        "Pane",  
-        "Vino",
-        "Biscotti",
-        "Marmellata"
-    ];
 
-    $totaleSpesa = count($spesa);
-        echo "Da comprare: ";
-    for ($i = 0; $i < $totaleSpesa; $i++){
+$spesa = [
+    "Pomodori",
+    "Zucchine",
+    "Peperoni",
+    "Latte",
+    "Pasta",
+    "Polpa di pomodoro",
+    "Pane",
+    "Vino",
+    "Biscotti",
+    "Marmellata"
+];
 
-        echo "<li>" . $i . ") " . $spesa[$i] . "</li>";
-    }
+$totaleSpesa = count($spesa);
+echo "Da comprare: ";
+for ($i = 0; $i < $totaleSpesa; $i++) {
+
+    echo "<li>" . $i . ") " . $spesa[$i] . "</li>";
+}
