@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     //🔎 Ricerca l'utente nel database
     $utente = trovaUtente($loginKey, getUtenti());
 
-    echo "<h2>Risultato del login</h2>";
+    echo "<h2 style='margin-top: 50px';>Risultato del login</h2>";
 
 
     if ($utente) {
@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 window.location.href = 'docente.php';
                 break;
             default:
-                window.location.href = 'index.php';
+                window.location.href = 'studente.php';
             }
         });
         </script>";
@@ -48,7 +48,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         Swal.fire({
             icon:  'error',
             title: 'Accesso negato',
-            text:  'Verifica la password',
+            text:  'Verifica la password o la email',
             confirmButtonText: 'Riprova'
         }).then(() => {
             window.location.href = 'index.php';
