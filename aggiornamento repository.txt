@@ -1,0 +1,6 @@
+git add .  // per aggiungere tutti i files
+
+git commit -m "messaggio"  // commento delle modifiche fatte
+
+git push    // salva tutte le modifiche nella repository
+
